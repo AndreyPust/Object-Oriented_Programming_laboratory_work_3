@@ -74,19 +74,25 @@ if __name__ == "__main__":
     print(f"Человек: {man.name}, {man.age} лет, {man.gender}, его вес: {man.weight} кг")
 
     man.rename("Алексей")  # Смена имени человека
-    man.change_age(35)     # Смена возраста человека
+    man.change_age(35)  # Смена возраста человека
     man.change_weight(80)  # Изменение веса человека
     print(f"Изменения: {man.name}, {man.age} лет, вес {man.weight} кг")
 
     # Для примера создадим объект класса Student
     student = Student("Ольга", 20, "женский", 55, 1)
-    print(f"Студент: {student.name}, {student.age} лет, {student.gender}, вес {student.weight} кг, год обучения: "
-          f"{student.year_of_study}")
+    print(
+        f"Студент: {student.name}, {student.age} лет, {student.gender}, вес {student.weight} кг, год обучения: "
+        f"{student.year_of_study}"
+    )
 
     student.increment_year_of_study()
-    print(f"Увеличение года обучения: Студент: {student.name}, {student.age} лет, {student.gender}, вес "
-          f"{student.weight} кг, год обучения: {student.year_of_study}")
+    print(
+        f"Увеличение года обучения: Студент: {student.name}, {student.age} лет, {student.gender}, вес "
+        f"{student.weight} кг, год обучения: {student.year_of_study}"
+    )
 
     student.change_year_of_study(4)
-    print(f"Изменения года обучения: Студент: {student.name}, {student.age} лет, {student.gender}, вес "
-          f"{student.weight} кг, год обучения: {student.year_of_study}")
+    print(
+        f"Изменения года обучения: Студент: {student.name}, {student.age} лет, {student.gender}, вес "
+        f"{student.weight} кг, год обучения: {student.year_of_study}"
+    )

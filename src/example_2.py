@@ -42,7 +42,7 @@ class Quadrilateral(Polygon):
         print("I have 4 sides")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Driver code
     R = Triangle()
     R.noofsides()

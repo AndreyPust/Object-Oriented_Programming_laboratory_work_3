@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-from abc import ABC, abstractmethod
 import math
+from abc import ABC, abstractmethod
 
 
 # Создать абстрактный базовый класс Function (функция) с виртуальными методами вычисления
@@ -54,7 +53,7 @@ class Ellipse(Function):
 
         if abs(x) > self.a:
             raise ValueError("Значение x выходит за границы эллипса (|x| <= a).")
-        return self.b * math.sqrt(1 - (x ** 2) / (self.a ** 2))
+        return self.b * math.sqrt(1 - (x**2) / (self.a**2))
 
     def display_result(self, x):
         """Вывод результата на экран, переопределение метода вывода абстрактного класса."""
@@ -83,7 +82,7 @@ class Hyperbola(Function):
         """
         if abs(x) < self.a:
             raise ValueError("Значение x должно быть больше или равно a (|x| >= a).")
-        return self.b * math.sqrt((x ** 2) / (self.a ** 2) - 1)
+        return self.b * math.sqrt((x**2) / (self.a**2) - 1)
 
     def display_result(self, x):
         """Вывод результата на экран."""
@@ -120,6 +119,6 @@ if __name__ == "__main__":
 
     # Примеры ошибок
     print("\nОбработка ошибок:")
-    ellipse.display_result(6)       # Выход за границы эллипса
-    hyperbola.display_result(3)     # Выход за границы гиперболы
+    ellipse.display_result(6)  # Выход за границы эллипса
+    hyperbola.display_result(3)  # Выход за границы гиперболы
     # abstract_function = Function()  # Попытка создать объект абстрактного класса Function, вызовет ошибку
