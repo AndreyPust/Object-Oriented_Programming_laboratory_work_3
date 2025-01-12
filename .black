@@ -1,7 +1,5 @@
 [tool.black]
 line-length = 120
 exclude = '''
-    .idea/
-    tests/
-    doc/
+    ^(.*/)?tests/test_individual_2\.py$
 '''
